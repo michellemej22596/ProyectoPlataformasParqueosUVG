@@ -1,9 +1,6 @@
 package com.example.proyectov1
 
 import android.annotation.SuppressLint
-import android.content.Context
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -32,6 +29,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MyScreenContent()
+
         }
     }
 }
@@ -40,7 +38,7 @@ class MainActivity : ComponentActivity() {
 fun BottomAppIcon(icon: ImageVector, contentDescription: String) {
     IconButton(
         onClick = {
-            openWhatsAppChat()
+
         },
         modifier = Modifier
             .padding(25.dp),
@@ -56,28 +54,6 @@ fun BottomAppIcon(icon: ImageVector, contentDescription: String) {
 }
 
 
-private fun shareOrder(context: Context, subject: String, summary: String) {
-    // Intent a WhatsApp
-    val intent = Intent(Intent.ACTION_SEND).apply {
-        type = "text/plain"
-        putExtra(Intent.EXTRA_SUBJECT, subject)
-        putExtra(Intent.EXTRA_TEXT, summary)
-    }
-    context.startActivity(
-        Intent.createChooser(
-            intent,
-            context.getString(R.string.new_cupcake_order)
-        )
-    )
-}
-
-fun openWhatsAppChat() {
-    val phoneNumber = "50231105604"
-    val uri = Uri.parse("https://wa.me/$phoneNumber")
-    val intent = Intent(Intent.ACTION_VIEW, uri)
-    //startActivity(intent, null)
-    Context.startService(intent)
-}
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
