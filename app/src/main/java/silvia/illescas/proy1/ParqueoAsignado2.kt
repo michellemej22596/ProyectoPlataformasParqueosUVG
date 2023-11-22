@@ -1,6 +1,9 @@
 package silvia.illescas.proy1
 
 import android.annotation.SuppressLint
+import android.content.ActivityNotFoundException
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -19,29 +22,28 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-
 
 class ParqueoAsignado2 : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             MyScreenContent()
-
         }
     }
 }
 
 @Composable
-fun BottomAppIcon(icon: ImageVector, contentDescription: String) {
-    IconButton(
-        onClick = {
+fun BottomAppIcon(icon: ImageVector, contentDescription: String, phoneNumber: String, onClickAction: () -> Unit) {
+    val context = LocalContext.current
 
-        },
-        modifier = Modifier.padding(25.dp)
+    IconButton(
+        onClick = onClickAction,
+        modifier = Modifier.padding(25.dp),
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -57,15 +59,34 @@ fun BottomAppIcon(icon: ImageVector, contentDescription: String) {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MyScreenContent() {
+    val phoneNumber = "50231105604"
+
+    val context = LocalContext.current
+
     Scaffold(
         bottomBar = {
             BottomAppBar(
                 modifier = Modifier.background(Color.Green)
             ) {
-                BottomAppIcon(Icons.Default.Home, stringResource(R.string.home))
-                BottomAppIcon(Icons.Default.Place, stringResource(R.string.place))
-                BottomAppIcon(Icons.Default.AccountCircle, stringResource(R.string.profile))
-                BottomAppIcon(Icons.Default.Info, stringResource(R.string.help))
+                BottomAppIcon(Icons.Default.Home, "Home", phoneNumber) {
+                    // Lógica onClick para el botón Home
+                }
+                BottomAppIcon(Icons.Default.Place, "Place", phoneNumber) {
+                    // Lógica onClick para el botón Place
+                }
+                BottomAppIcon(Icons.Default.AccountCircle, "Profile", phoneNumber) {
+                    // Lógica onClick para el botón AccountCircle
+                }
+                BottomAppIcon(Icons.Default.Info, "Help", phoneNumber) {
+                    val intent = Intent(Intent.ACTION_VIEW)
+                    intent.data = Uri.parse("https://api.whatsapp.com/send?phone=$phoneNumber")
+
+                    try {
+                        context.startActivity(intent)
+                    } catch (e: ActivityNotFoundException) {
+                        // WhatsApp no está instalado, muestra un mensaje de error o realiza alguna otra acción
+                    }
+                }
             }
         },
         content = {
@@ -78,12 +99,13 @@ fun MyScreenContent() {
                 contentAlignment = Alignment.Center,
                 content = {
                     Column(
-                        modifier = Modifier.padding(20.dp),
+                        modifier = Modifier
+                            .padding(20.dp),
                         verticalArrangement = Arrangement.Center,
                         horizontalAlignment = Alignment.CenterHorizontally,
                     ) {
                         Text(
-                            text = "Bienvenido $name",
+                            text = stringResource(R.string.welcome_text, name),
                             fontSize = 24.sp,
                             color = Color.White
                         )
@@ -108,6 +130,6 @@ fun MyScreenContent() {
                     }
                 }
             )
-        }
-    )
+            }
+        )
 }
