@@ -67,15 +67,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/estra/AndroidStudioProjects/Lab5v3"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/estra/AndroidStudioProjects/Lab5v3&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\estra\AndroidStudioProjects\Lab5v3\app\src\main\res\drawable" />
@@ -136,9 +136,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
     <configuration name="GreetingPreview" type="ComposePreviewRunConfiguration" temporary="true">
       <module name="Lab5v3.app" />
@@ -195,9 +193,7 @@
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="true" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <compose-preview-run-configuration composable-fqn="com.example.lab5v3.MainActivityKt.GreetingPreview" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
