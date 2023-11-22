@@ -1,5 +1,8 @@
 package silvia.illescas.proy1
 
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
@@ -8,9 +11,27 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import silvia.illescas.proy1.ui.theme.Proy1Theme
 
+class Parqueoasignado: ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            Proy1Theme() {
+                // A surface container using the 'background' color from the theme
+                Surface(
+                    modifier = Modifier,
+                    color = MaterialTheme.colorScheme.background,
+                ) {
+                    ParqueoScreen()
+                }
+            }
+        }
+    }
+}
 @Composable
 fun ParqueoScreen() {
     var parqueoText by remember { mutableStateOf("E09") }
@@ -26,7 +47,7 @@ fun ParqueoScreen() {
                 horizontalAlignment = Alignment.CenterHorizontally,
             ) {
                 Text(
-                    text = "Bienvenido",
+                    text = stringResource(id = R.string.welcome_text),
                     fontSize = 24.sp,
                     color = Color.White
                 )
@@ -39,7 +60,7 @@ fun ParqueoScreen() {
                     contentAlignment = Alignment.Center,
                 ) {
                     Text(
-                        text = "Tu parqueo es: $parqueoText",
+                        text = stringResource(id = R.string.parking_text_template, parqueoText),
                         fontSize = 24.sp,
                         color = Color.White
                     )
@@ -53,7 +74,7 @@ fun ParqueoScreen() {
                         .fillMaxWidth()
                         .padding(16.dp),
                 ) {
-                    Text(text = "Marcar Salida")
+                    Text(text = stringResource(id = R.string.exit_button_text))
                 }
             }
         }

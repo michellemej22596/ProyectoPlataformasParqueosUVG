@@ -1,6 +1,9 @@
 package silvia.illescas.proy1
 
 
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
@@ -10,8 +13,26 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.res.stringResource
+import silvia.illescas.proy1.ui.theme.Proy1Theme
 
 
+class Exito: ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            Proy1Theme() {
+                // A surface container using the 'background' color from the theme
+                Surface(
+                    modifier = Modifier,
+                    color = MaterialTheme.colorScheme.background,
+                ) {
+                    ExitoScreen()
+                }
+            }
+        }
+    }
+}
 @Composable
 fun ExitoScreen() {
     var showDialog by remember { mutableStateOf(true) }
@@ -36,17 +57,17 @@ fun ExitoScreen() {
                         color = Color.Gray,
                         modifier = Modifier.fillMaxWidth().height(1.dp)
                     )
-                    Text(text = "¡Parqueo asignado con exito!")
+                    Text(text = stringResource(id = R.string.success_text))
                 }
             },
-            text = { Text(text = "Se ha asignado tu parqueo, puedes ir a parquearte de inmediato.") },
+            text = { Text(text = stringResource(id = R.string.success_message)) },
             confirmButton = {
                 Button(
                     onClick = { showDialog = false },
                     shape = MaterialTheme.shapes.small,
-                    modifier = Modifier.fillMaxWidth().background(Color(3, 121, 255)),
+                    modifier = Modifier.fillMaxWidth().background(Color(139, 195, 74, 255)),
                 ) {
-                    Text("Cerrar", color = Color.White)
+                    Text(text = stringResource(id = R.string.success_close_button), color = Color.White)
                 }
             }
         )

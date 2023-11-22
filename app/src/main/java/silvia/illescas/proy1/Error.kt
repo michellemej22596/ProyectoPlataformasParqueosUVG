@@ -1,16 +1,51 @@
 package silvia.illescas.proy1
 
-
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.*
-import androidx.compose.runtime.*
-import androidx.compose.ui.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.size
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Button
+import androidx.compose.material3.Divider
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import androidx.compose.runtime.Composable
+import silvia.illescas.proy1.ui.theme.Proy1Theme
 
+
+class Error: ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            Proy1Theme() {
+                // A surface container using the 'background' color from the theme
+                Surface(
+                    modifier = Modifier,
+                    color = MaterialTheme.colorScheme.background,
+                ) {
+                    ErrorScreen()
+                }
+            }
+        }
+    }
+}
 
 @Composable
 fun ErrorScreen() {
@@ -26,7 +61,7 @@ fun ErrorScreen() {
                     verticalArrangement = Arrangement.spacedBy(8.dp),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    val painter = painterResource(id = R.drawable.exclamacion1_foreground)
+                    val painter = painterResource(id = R.mipmap.exclamacion1_foreground)
                     Icon(
                         painter = painter,
                         contentDescription = null,
@@ -34,19 +69,23 @@ fun ErrorScreen() {
                     )
                     Divider(
                         color = Color.Gray,
-                        modifier = Modifier.fillMaxWidth().height(1.dp)
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(1.dp)
                     )
-                    Text(text = "Error")
+                    Text(text = stringResource(id = R.string.error_title))
                 }
             },
-            text = { Text(text = "Se ha producido un error al escanear el QR, vuelva a intentarlo.") },
+            text = { Text(text = stringResource(id = R.string.error_message)) },
             confirmButton = {
                 Button(
                     onClick = { showDialog = false },
                     shape = MaterialTheme.shapes.small,
-                    modifier = Modifier.fillMaxWidth().background(Color(3, 121, 255)),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(Color(139, 195, 74, 255)),
                 ) {
-                    Text("Cerrar", color = Color.White)
+                    Text(text = stringResource(id = R.string.close_button), color = Color.White)
                 }
             }
         )
