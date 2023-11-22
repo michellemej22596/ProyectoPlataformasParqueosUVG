@@ -10,4 +10,13 @@
     <string name="success_message">Su parqueo se asignó con éxito</string>
     <string name="success_close_button">Cerrar</string>
     <string name="success_text">Listo</string>
+    <string name="home">Inicio</string>
+    <string name="place">Lugar</string>
+    <string name="profile">Perfil</string>
+    <string name="help">Ayuda</string>
+    <string name="user_name">Michelle Mejia</string>
+    <string name="edit_profile">Editar Perfil</string>
+    <string name="my_password">Mi Contraseña</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="my_favorites">Mis Favoritos</string>
 </resources>

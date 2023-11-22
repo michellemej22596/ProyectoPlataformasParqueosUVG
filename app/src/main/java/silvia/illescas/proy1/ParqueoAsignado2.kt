@@ -20,6 +20,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -40,8 +41,7 @@ fun BottomAppIcon(icon: ImageVector, contentDescription: String) {
         onClick = {
 
         },
-        modifier = Modifier
-            .padding(25.dp),
+        modifier = Modifier.padding(25.dp)
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -53,8 +53,6 @@ fun BottomAppIcon(icon: ImageVector, contentDescription: String) {
     }
 }
 
-
-
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -64,10 +62,10 @@ fun MyScreenContent() {
             BottomAppBar(
                 modifier = Modifier.background(Color.Green)
             ) {
-                BottomAppIcon(Icons.Default.Home, "Home")
-                BottomAppIcon(Icons.Default.Place, "Place")
-                BottomAppIcon(Icons.Default.AccountCircle, "Profile")
-                BottomAppIcon(Icons.Default.Info, "Help")
+                BottomAppIcon(Icons.Default.Home, stringResource(R.string.home))
+                BottomAppIcon(Icons.Default.Place, stringResource(R.string.place))
+                BottomAppIcon(Icons.Default.AccountCircle, stringResource(R.string.profile))
+                BottomAppIcon(Icons.Default.Info, stringResource(R.string.help))
             }
         },
         content = {
@@ -80,8 +78,7 @@ fun MyScreenContent() {
                 contentAlignment = Alignment.Center,
                 content = {
                     Column(
-                        modifier = Modifier
-                            .padding(20.dp),
+                        modifier = Modifier.padding(20.dp),
                         verticalArrangement = Arrangement.Center,
                         horizontalAlignment = Alignment.CenterHorizontally,
                     ) {

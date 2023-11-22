@@ -3,6 +3,7 @@ package silvia.illescas.proy1
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -12,7 +13,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Divider
-import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -46,7 +46,6 @@ class Error: ComponentActivity() {
         }
     }
 }
-
 @Composable
 fun ErrorScreen() {
     var showDialog by remember { mutableStateOf(true) }
@@ -58,14 +57,14 @@ fun ErrorScreen() {
             title = {
                 Column(
                     modifier = Modifier.fillMaxWidth(),
-                    verticalArrangement = Arrangement.spacedBy(8.dp),
+                    verticalArrangement = Arrangement.spacedBy(16.dp),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     val painter = painterResource(id = R.mipmap.exclamacion1_foreground)
-                    Icon(
+                    Image(
                         painter = painter,
                         contentDescription = null,
-                        modifier = Modifier.size(32.dp),
+                        modifier = Modifier.size(45.dp),
                     )
                     Divider(
                         color = Color.Gray,

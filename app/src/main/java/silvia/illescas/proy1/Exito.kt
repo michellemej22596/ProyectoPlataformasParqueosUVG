@@ -4,6 +4,7 @@ package silvia.illescas.proy1
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
@@ -44,14 +45,14 @@ fun ExitoScreen() {
             title = {
                 Column(
                     modifier = Modifier.fillMaxWidth(),
-                    verticalArrangement = Arrangement.spacedBy(8.dp),
+                    verticalArrangement = Arrangement.spacedBy(16.dp),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    val painter = painterResource(id = R.drawable.cheque_background)
-                    Icon(
+                    val painter = painterResource(id = R.drawable.cheque_foreground)
+                    Image(
                         painter = painter,
                         contentDescription = null,
-                        modifier = Modifier.size(32.dp),
+                        modifier = Modifier.size(45.dp),
                     )
                     Divider(
                         color = Color.Gray,

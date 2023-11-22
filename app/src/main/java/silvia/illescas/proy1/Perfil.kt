@@ -26,6 +26,7 @@ import androidx.compose.material3.Divider
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 
 class Perfil: ComponentActivity() {
@@ -49,27 +50,24 @@ class Perfil: ComponentActivity() {
 fun ProfileFun(modifier: Modifier = Modifier) {
     Surface(color = Color.White) {
         Column(
-            modifier = modifier
-                .fillMaxSize(),
+            modifier = modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
 
-            //Icono de arriba
+            // Top Icon and Text
             Column(
-                modifier = Modifier
-                    .fillMaxWidth(),
+                modifier = Modifier.fillMaxWidth(),
                 horizontalAlignment = Alignment.CenterHorizontally
-
             ){
 
                 Image(
                     painter = painterResource(id = R.drawable.ic_profile),
-                    contentDescription = "Perfil",
-                    modifier = modifier
-                        .size(250.dp)
+                    contentDescription = stringResource(R.string.profile),
+                    modifier = modifier.size(250.dp)
                 )
 
-                Text(text = "Michelle Mejia",
+                Text(
+                    text = stringResource(R.string.user_name),
                     fontWeight = FontWeight.ExtraBold,
                     fontSize = 20.sp,
                     modifier = Modifier
@@ -80,31 +78,31 @@ fun ProfileFun(modifier: Modifier = Modifier) {
                 Divider(color = Color.LightGray, modifier = Modifier.padding(vertical = 16.dp))
             }
 
-            //Secciones de la pantalla, llamada a metodo ProfileItem
+            // Sections of the screen, calling ProfileItem method
             ProfileItem(
                 iconResId = R.drawable.person_foreground,
-                text = "Edit Profile"
+                textResId = R.string.edit_profile
             )
 
             Divider(color = Color.LightGray, modifier = Modifier.padding(vertical = 16.dp))
 
             ProfileItem(
                 iconResId = R.drawable.lock_foreground,
-                text = "My Password"
+                textResId = R.string.my_password
             )
 
             Divider(color = Color.LightGray, modifier = Modifier.padding(vertical = 16.dp))
 
             ProfileItem(
                 iconResId = R.drawable.notifications_foreground,
-                text = "Notifications"
+                textResId = R.string.notifications
             )
 
             Divider(color = Color.LightGray, modifier = Modifier.padding(vertical = 16.dp))
 
             ProfileItem(
                 iconResId = R.mipmap.commonqr_foreground,
-                text = "My Favorites"
+                textResId = R.string.my_favorites
             )
 
             Divider(color = Color.LightGray, modifier = Modifier.padding(vertical = 16.dp))
@@ -113,9 +111,8 @@ fun ProfileFun(modifier: Modifier = Modifier) {
     }
 }
 
-//Funcion para crear cada seccion
 @Composable
-fun ProfileItem(iconResId: Int, text: String, modifier: Modifier = Modifier ) {
+fun ProfileItem(iconResId: Int, textResId: Int, modifier: Modifier = Modifier) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -123,38 +120,30 @@ fun ProfileItem(iconResId: Int, text: String, modifier: Modifier = Modifier ) {
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier
                 .padding(8.dp)
-                .fillMaxWidth(),
-
-            ) {
+                .fillMaxWidth()
+        ) {
 
             Image(
                 painter = painterResource(id = iconResId),
-                contentDescription = "Perfil",
-                modifier = modifier
-                    .size(60.dp)
-                    .wrapContentSize(Alignment.Center)
+                contentDescription = stringResource(textResId),
+                modifier = modifier.size(60.dp).wrapContentSize(Alignment.Center)
             )
 
-            Column{
+            Column {
                 Spacer(modifier = Modifier.width(10.dp))
-                Text(text = text, fontWeight = FontWeight.Bold)
+                Text(text = stringResource(textResId), fontWeight = FontWeight.Bold)
             }
 
             Spacer(modifier = Modifier.width(120.dp))
 
             Image(
                 painter = painterResource(id = R.drawable.arrow_foreground),
-                contentDescription = "Perfil",
-                modifier = modifier
-                    .size(40.dp)
-                    .wrapContentSize(Alignment.Center)
+                contentDescription = stringResource(textResId),
+                modifier = modifier.size(40.dp).wrapContentSize(Alignment.Center)
             )
-
         }
     }
 }
-
-
 
 @Preview(showBackground = true)
 @Composable
@@ -162,5 +151,7 @@ fun ProfilePreview() {
     Proy1Theme {
         ProfileFun()
     }
-
 }
+
+
+
