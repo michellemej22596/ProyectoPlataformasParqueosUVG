@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">proy1</string>
+    <string name="error_title">Error</string>
+    <string name="error_message">An error occurred while scanning the QR code, please try again.</string>
+    <string name="close_button">Close</string>
+    <string name="welcome_text">Welcome</string>
+    <string name="parking_text_template">Your parking spot is: %s</string>
+    <string name="exit_button_text">Mark Exit</string>
+    <string name="success_title">Success</string>
+    <string name="success_message">Your parking spot has been successfully assigned</string>
+    <string name="success_close_button">Close</string>
+    <string name="success_text">Ready</string>
+</resources>
