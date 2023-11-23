@@ -47,6 +47,7 @@ class Login : ComponentActivity() {
 fun LoginScreen(navController: NavHostController) {
     var username by remember { mutableStateOf(TextFieldValue()) }
     var password by remember { mutableStateOf(TextFieldValue()) }
+    var errorMessage by remember { mutableStateOf("") }
 
     Column(
         modifier = Modifier
@@ -65,7 +66,8 @@ fun LoginScreen(navController: NavHostController) {
             value = username,
             onValueChange = { username = it },
             label = { Text("Usuario") },
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            isError = errorMessage.isNotEmpty()
         )
         Spacer(modifier = Modifier.height(16.dp))
         TextField(
@@ -73,11 +75,30 @@ fun LoginScreen(navController: NavHostController) {
             onValueChange = { password = it },
             label = { Text("Contraseña") },
             visualTransformation = PasswordVisualTransformation(),
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            isError = errorMessage.isNotEmpty()
         )
+        if (errorMessage.isNotEmpty()) {
+            Text(
+                text = errorMessage,
+                color = Color.Red,
+                modifier = Modifier.padding(top = 8.dp)
+            )
+        }
         Spacer(modifier = Modifier.height(16.dp))
         Button(
-            onClick = {navController.navigate("ParqueoScreen2")},
+            onClick = {
+                if (!username.text.contains("@")) {
+                    errorMessage = "Ingresa un usuario válido"
+                } else if (username.text.contains(" ")) {
+                    errorMessage = "El usuario no puede contener espacios"
+                } else if (password.text.contains("[^A-Za-z0-9 ]".toRegex())) {
+                    errorMessage = "La contraseña no puede contener caracteres especiales"
+                } else {
+                    errorMessage = ""
+                    navController.navigate("ParqueoScreen2")
+                }
+            },
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(Color.Green)
         ) {
@@ -89,7 +110,6 @@ fun LoginScreen(navController: NavHostController) {
             modifier = Modifier.clickable {
                 navController.navigate("registrationScreen")
             }
-        )
-    }
+            )
+        }
 }
-

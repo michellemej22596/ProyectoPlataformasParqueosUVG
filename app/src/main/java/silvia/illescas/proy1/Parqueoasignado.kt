@@ -96,7 +96,7 @@ fun ParqueoScreen(navController: NavHostController) {
                 Spacer(modifier = Modifier.height(16.dp))
 
                 Button(
-                    onClick = { /* Acción al hacer clic en el botón "Marcar Salida" */ },
+                    onClick = {navController.navigate("ParqueoScreen2")},
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(16.dp),

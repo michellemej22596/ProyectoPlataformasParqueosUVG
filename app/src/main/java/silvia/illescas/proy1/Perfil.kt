@@ -1,4 +1,7 @@
 package silvia.illescas.proy1
+import android.content.ActivityNotFoundException
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -23,9 +26,14 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountCircle
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Info
+import androidx.compose.material.icons.filled.Place
 import androidx.compose.material.icons.filled.ShoppingCart
 import androidx.compose.material.icons.sharp.Face
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import silvia.illescas.proy1.ui.theme.Proy1Theme
 
@@ -146,4 +154,33 @@ fun ProfileCard(
             }
             }
         }
+    @Composable
+    fun BottomBarWithIconsAndIntent() {
+        val phoneNumber = "50231105604"
+        val context = LocalContext.current
+
+        BottomAppBar(
+            modifier = Modifier.background(Color.Green)
+        ) {
+            BottomAppIcon(Icons.Default.Home, stringResource(R.string.home), phoneNumber) {
+                // Lógica onClick para el botón Home
+            }
+            BottomAppIcon(Icons.Default.Place, stringResource(R.string.place), phoneNumber) {
+                // Lógica onClick para el botón Place
+            }
+            BottomAppIcon(Icons.Default.AccountCircle, stringResource(R.string.profile), phoneNumber) {
+                // Lógica onClick para el botón AccountCircle
+            }
+            BottomAppIcon(Icons.Default.Info, stringResource(R.string.help), phoneNumber) {
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.data = Uri.parse("https://api.whatsapp.com/send?phone=$phoneNumber")
+
+                try {
+                    context.startActivity(intent)
+                } catch (e: ActivityNotFoundException) {
+                    // WhatsApp no está instalado, muestra un mensaje de error o realiza alguna otra acción
+                }
+                }
+            }
+    }
 }

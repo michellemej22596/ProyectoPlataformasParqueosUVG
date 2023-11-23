@@ -67,7 +67,8 @@ fun RegistrationScreen(navController: NavHostController) {
             value = username,
             onValueChange = { username = it },
             label = { Text(stringResource(R.string.username)) },
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            isError = !username.text.contains("@") // Validación del usuario
         )
         Spacer(modifier = Modifier.height(16.dp))
         TextField(
@@ -75,32 +76,38 @@ fun RegistrationScreen(navController: NavHostController) {
             onValueChange = { password = it },
             label = { Text(stringResource(R.string.password)) },
             visualTransformation = PasswordVisualTransformation(),
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            isError = !password.text.matches(Regex("^[a-zA-Z0-9]+$")) // Validación de la contraseña
         )
         Spacer(modifier = Modifier.height(16.dp))
         TextField(
             value = confirmPassword,
             onValueChange = { confirmPassword = it },
-            label = { Text("Confirmar Contraseña") },
+            label = { Text(stringResource(R.string.confirm_password)) },
             visualTransformation = PasswordVisualTransformation(),
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            isError = !confirmPassword.text.matches(Regex("^[a-zA-Z0-9]+$")) // Validación de la contraseña
         )
         Spacer(modifier = Modifier.height(16.dp))
         Button(
-            onClick = { /* Acción de registro */
-                            navController.navigate("loginScreen")},
+            onClick = {
+                // Acción de registro
+                if (username.text.contains("@") && password.text == confirmPassword.text) {
+                    navController.navigate("loginScreen")
+                }
+            },
             modifier = Modifier.fillMaxWidth(),
-            colors = ButtonDefaults.buttonColors(Color.Blue)
-
+            colors = ButtonDefaults.buttonColors(Color.Blue),
+            enabled = username.text.contains("@") && password.text == confirmPassword.text // Habilitar botón solo si el usuario y la contraseña son válidos
         ) {
             Text("Registrarse")
         }
         Spacer(modifier = Modifier.height(16.dp))
         Text(
-            text = "¿Ya tienes una cuenta? Inicia sesión",
+            text = stringResource(R.string.no_account),
             modifier = Modifier.clickable {
                 navController.navigate("loginScreen")
             }
-        )
-    }
+            )
+        }
 }
