@@ -19,6 +19,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
@@ -65,14 +66,14 @@ fun RegistrationScreen(navController: NavHostController) {
         TextField(
             value = username,
             onValueChange = { username = it },
-            label = { Text("Usuario") },
+            label = { Text(stringResource(R.string.username)) },
             modifier = Modifier.fillMaxWidth()
         )
         Spacer(modifier = Modifier.height(16.dp))
         TextField(
             value = password,
             onValueChange = { password = it },
-            label = { Text("Contraseña") },
+            label = { Text(stringResource(R.string.password)) },
             visualTransformation = PasswordVisualTransformation(),
             modifier = Modifier.fillMaxWidth()
         )
@@ -86,17 +87,15 @@ fun RegistrationScreen(navController: NavHostController) {
         )
         Spacer(modifier = Modifier.height(16.dp))
         Button(
-            onClick = { /* Acción de registro */ },
+            onClick = { /* Acción de registro */
+                            navController.navigate("loginScreen")},
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(Color.Blue)
+
         ) {
             Text("Registrarse")
         }
         Spacer(modifier = Modifier.height(16.dp))
-        Text(
-            text = "¿Ya tienes una cuenta? Inicia sesión",
-            modifier = Modifier.clickable { /* Acción al hacer clic */ }
-        )
         Text(
             text = "¿Ya tienes una cuenta? Inicia sesión",
             modifier = Modifier.clickable {

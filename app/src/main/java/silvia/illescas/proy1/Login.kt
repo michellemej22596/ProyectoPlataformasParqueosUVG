@@ -77,7 +77,7 @@ fun LoginScreen(navController: NavHostController) {
         )
         Spacer(modifier = Modifier.height(16.dp))
         Button(
-            onClick = { /* Acción de inicio de sesión */ },
+            onClick = {navController.navigate("ParqueoScreen2")},
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(Color.Green)
         ) {
@@ -86,13 +86,10 @@ fun LoginScreen(navController: NavHostController) {
         Spacer(modifier = Modifier.height(16.dp))
         Text(
             text = "Si no tienes sesión, regístrate",
-            modifier = Modifier.clickable { /* Acción al hacer clic */ }
-        )
-        Text(
-            text = "Si no tienes sesión, regístrate",
             modifier = Modifier.clickable {
                 navController.navigate("registrationScreen")
             }
         )
     }
 }
+

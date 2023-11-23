@@ -1,3 +1,4 @@
+
 package silvia.illescas.proy1
 
 import android.os.Bundle
@@ -18,11 +19,15 @@ class MainActivity : ComponentActivity() {
                 NavHost(navController = navController, startDestination = "loginScreen") {
                     composable("loginScreen") { LoginScreen(navController) }
                     composable("registrationScreen") { RegistrationScreen(navController) }
-                    composable("parqueoAsignado") { ParqueoAsignado(navController) }
+                    composable("ParqueoScreen") { ParqueoScreen(navController) }
+                    composable("ParqueoScreen2") { MyScreenContent(navController) }
+                    composable("Profile") { ProfileScreen(navController) }
                     composable("error") { Error() }
                     composable("exito") { Exito() }
                 }
             }
         }
     }
+
+
 }

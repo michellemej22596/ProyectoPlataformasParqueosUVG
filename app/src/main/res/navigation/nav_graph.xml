@@ -15,4 +15,9 @@
         android:name="silvia.pastilles.pro1.Registration"
         tools:layout="silvia.pastilles.pro1.Registration" />
 
+    <composable
+        android:id="@+id/parqueoasignadoScreen"
+        android:name="silvia.pastilles.pro1.countersignature"
+        tools:layout="silvia.pastilles.pro1.countersignature" />
+
 </navigation>

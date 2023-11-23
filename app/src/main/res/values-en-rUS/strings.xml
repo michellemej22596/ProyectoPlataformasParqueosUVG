@@ -20,4 +20,13 @@
     <string name="my_password">My Password</string>
     <string name="notifications">Notifications</string>
     <string name="my_favorites">My Favorites</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="already_have_account">Already have an account? Sign in</string>
+
+    <string name="login">Log In</string>
+    <string name="no_account">Don\'t have an account? Sign up</string>
 </resources>

@@ -25,7 +25,7 @@ import androidx.navigation.NavHostController
 import silvia.illescas.proy1.ui.theme.Proy1Theme
 import kotlin.random.Random
 
-class ParqueoAsignado(navController: NavHostController) : ComponentActivity() {
+class ParqueoAsignado : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
     @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,7 +44,8 @@ class ParqueoAsignado(navController: NavHostController) : ComponentActivity() {
                         }
                     },
                     content = {
-                        ParqueoScreen()
+                        val navController = null
+                        navController?.let { it1 -> ParqueoScreen(it1) }
                     }
                 )
             }
@@ -57,7 +58,7 @@ private fun RowScope.BottomAppIcon(icon: ImageVector, contentDescription: String
 }
 
 @Composable
-fun ParqueoScreen() {
+fun ParqueoScreen(navController: NavHostController) {
     val random = Random(System.currentTimeMillis())
     var parqueoText by remember { mutableStateOf("E" + random.nextInt(100)) }
 
@@ -103,6 +104,6 @@ fun ParqueoScreen() {
                     Text(text = stringResource(id = R.string.exit_button_text))
                 }
             }
-        }
-    )
+            }
+        )
 }

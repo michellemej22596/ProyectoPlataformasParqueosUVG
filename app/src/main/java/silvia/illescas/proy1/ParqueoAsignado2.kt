@@ -27,12 +27,14 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 
-class ParqueoAsignado2 : ComponentActivity() {
+class ParqueoAsignado2(navController: NavHostController) : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MyScreenContent()
+            val navController = null
+            navController?.let { MyScreenContent(it) }
         }
     }
 }
@@ -58,7 +60,7 @@ fun BottomAppIcon(icon: ImageVector, contentDescription: String, phoneNumber: St
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MyScreenContent() {
+fun MyScreenContent(navController: NavHostController) {
     val phoneNumber = "50231105604"
 
     val context = LocalContext.current
@@ -69,13 +71,13 @@ fun MyScreenContent() {
                 modifier = Modifier.background(Color.Green)
             ) {
                 BottomAppIcon(Icons.Default.Home, "Home", phoneNumber) {
-                    // Lógica onClick para el botón Home
+                    navController.navigate("ParqueoScreen")
                 }
                 BottomAppIcon(Icons.Default.Place, "Place", phoneNumber) {
                     // Lógica onClick para el botón Place
                 }
                 BottomAppIcon(Icons.Default.AccountCircle, "Profile", phoneNumber) {
-                    // Lógica onClick para el botón AccountCircle
+                    navController.navigate("Profile")
                 }
                 BottomAppIcon(Icons.Default.Info, "Help", phoneNumber) {
                     val intent = Intent(Intent.ACTION_VIEW)
