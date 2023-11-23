@@ -1,0 +1,426 @@
+[
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/xml_data_extraction_rules.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_exclamacion1_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/exclamacion1_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-hdpi_exclamacion.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-hdpi/exclamacion.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxxhdpi_exclamacion1_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxxhdpi/exclamacion1_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_listo_background.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/listo_background.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-hdpi_commonqr.webp.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-hdpi/commonqr.webp"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxxhdpi_cheque_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxxhdpi/cheque_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xhdpi_exclamacion_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xhdpi/exclamacion_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_exclamation2_background.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/exclamation2_background.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-hdpi_exclamacion_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-hdpi/exclamacion_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_calendar_foreground.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/calendar_foreground.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/xml_backup_rules.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxxhdpi_listo.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxxhdpi/listo.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_notifications_foreground.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/notifications_foreground.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-hdpi_cheque_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-hdpi/cheque_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxhdpi_listo_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxhdpi/listo_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-hdpi_exclamacion1.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-hdpi/exclamacion1.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-hdpi_exclamacion1_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-hdpi/exclamacion1_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_exclamation3_background.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/exclamation3_background.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-hdpi_listo_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-hdpi/listo_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxhdpi_cheque.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxhdpi/cheque.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_cheque_background.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/cheque_background.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-hdpi_listo_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-hdpi/listo_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-mdpi_cheque_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-mdpi/cheque_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xhdpi_exclamacion1_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xhdpi/exclamacion1_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxhdpi_exclamacion_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxhdpi/exclamacion_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_exclamacion_background.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/exclamacion_background.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxhdpi_listo_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxhdpi/listo_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-anydpi-v26_cheque_round.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-anydpi-v26/cheque_round.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_star_foreground.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/star_foreground.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-mdpi_exclamacion1.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-mdpi/exclamacion1.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_ic_launcher_background.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_person_foreground.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/person_foreground.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-mdpi_exclamacion_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-mdpi/exclamacion_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_cheque.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/cheque.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_ic_profile.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/ic_profile.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xhdpi_cheque_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xhdpi/cheque_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxxhdpi_listo_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxxhdpi/listo_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxhdpi_cheque_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxhdpi/cheque_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_exclamacion1_background.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/exclamacion1_background.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_icon1_foreground.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/icon1_foreground.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-mdpi_exclamacion_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-mdpi/exclamacion_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_cheque_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/cheque_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_lock_foreground.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/lock_foreground.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-mdpi_cheque.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-mdpi/cheque.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-mdpi_listo_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-mdpi/listo_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_commonqr_background.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/commonqr_background.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-anydpi-v26_exclamacion1_round.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-anydpi-v26/exclamacion1_round.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xhdpi_cheque_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xhdpi/cheque_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-hdpi_commonqr_foreground.webp.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-hdpi/commonqr_foreground.webp"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxxhdpi_cheque_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxxhdpi/cheque_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-mdpi_listo_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-mdpi/listo_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxhdpi_exclamacion1_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxhdpi/exclamacion1_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-anydpi-v26_exclamacion.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-anydpi-v26/exclamacion.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-anydpi-v26_exclamacion1.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-anydpi-v26/exclamacion1.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_exclamation2_foreground.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/exclamation2_foreground.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxhdpi_exclamacion.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxhdpi/exclamacion.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-mdpi_exclamacion.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-mdpi/exclamacion.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxxhdpi_exclamacion_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxxhdpi/exclamacion_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_clock_foreground.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/clock_foreground.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxhdpi_exclamacion_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxhdpi/exclamacion_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xhdpi_listo_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xhdpi/listo_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxxhdpi_cheque.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxxhdpi/cheque.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_arrow_foreground.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/arrow_foreground.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxxhdpi_exclamacion_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxxhdpi/exclamacion_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xhdpi_listo_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xhdpi/listo_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xhdpi_exclamacion.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xhdpi/exclamacion.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxhdpi_exclamacion1_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxhdpi/exclamacion1_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-hdpi_exclamacion_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-hdpi/exclamacion_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-hdpi_listo.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-hdpi/listo.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xhdpi_cheque.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xhdpi/cheque.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxhdpi_listo.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxhdpi/listo.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-anydpi-v26_listo.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-anydpi-v26/listo.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xhdpi_listo.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xhdpi/listo.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xhdpi_exclamacion1.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xhdpi/exclamacion1.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xhdpi_exclamacion_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xhdpi/exclamacion_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxxhdpi_listo_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxxhdpi/listo_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-anydpi-v26_exclamacion_round.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-anydpi-v26/exclamacion_round.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-anydpi-v26_cheque.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-anydpi-v26/cheque.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-mdpi_exclamacion1_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-mdpi/exclamacion1_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxhdpi_cheque_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxhdpi/cheque_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-anydpi-v26_listo_round.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-anydpi-v26/listo_round.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_place.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/place.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxxhdpi_exclamacion1.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxxhdpi/exclamacion1.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-hdpi_exclamacion1_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-hdpi/exclamacion1_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxxhdpi_exclamacion1_foreground.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxxhdpi/exclamacion1_foreground.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-mdpi_exclamacion1_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-mdpi/exclamacion1_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-mdpi_cheque_round.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-mdpi/cheque_round.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxhdpi_exclamacion1.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxhdpi/exclamacion1.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-mdpi_listo.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-mdpi/listo.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/mipmap-xxxhdpi_exclamacion.png.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/mipmap-xxxhdpi/exclamacion.png"
+    },
+    {
+        "merged": "silvia.illescas.proy1.app-merged_res-44:/drawable_exclamation1_background.xml.flat",
+        "source": "silvia.illescas.proy1.app-main-46:/drawable/exclamation1_background.xml"
+    }
+]

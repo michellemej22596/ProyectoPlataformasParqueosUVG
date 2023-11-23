@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "silvia.illescas.proy1.app-mergeDebugResources-42:/values-en-rUM/values-en-rUM.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\estra\\OneDrive\\Documentos\\GitHub\\ProyectoPlataformasParqueosUVG\\app\\src\\main\\res\\values-en-rUM\\strings.xml",
+                    "from": {
+                        "startLines": "2,5,4,3,8,7,11,10,12,9,6",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "57,255,148,101,429,353,630,536,686,485,303",
+                        "endColumns": "42,46,105,45,54,74,54,92,46,49,48",
+                        "endOffsets": "95,297,249,142,479,423,680,624,728,530,347"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,98,145,251,297,352,427,482,575,622,672",
+                        "endColumns": "42,46,105,45,54,74,54,92,46,49,48",
+                        "endOffsets": "93,140,246,292,347,422,477,570,617,667,716"
+                    }
+                }
+            ]
+        }
+    ]
+}
