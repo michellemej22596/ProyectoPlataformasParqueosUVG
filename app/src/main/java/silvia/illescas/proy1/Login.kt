@@ -77,7 +77,7 @@ fun LoginScreen(navController: NavHostController) {
         )
         Spacer(modifier = Modifier.height(16.dp))
         Button(
-            onClick = { /* Acción de inicio de sesión */ },
+            onClick = {navController.navigate("registrationScreen") },
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(Color.Green)
         ) {
