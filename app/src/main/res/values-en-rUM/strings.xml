@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
-    <string name="app_name">ProyectoV5.0</string>
-=======
     <string name="app_name">proy1</string>
->>>>>>> 380b0938bffd4465744bce98e678a7cf2c1ffe27
     <string name="error_title">Error</string>
     <string name="error_message">An error occurred while scanning the QR code, please try again.</string>
     <string name="close_button">Close</string>
@@ -15,13 +11,4 @@
     <string name="success_message">Your parking spot has been successfully assigned</string>
     <string name="success_close_button">Close</string>
     <string name="success_text">Ready</string>
-    <string name="home">Home</string>
-    <string name="place">Place</string>
-    <string name="profile">Profile</string>
-    <string name="help">Help</string>
-    <string name="user_name">Michelle Mejia</string>
-    <string name="edit_profile">Edit Profile</string>
-    <string name="my_password">My Password</string>
-    <string name="notifications">Notifications</string>
-    <string name="my_favorites">My Favorites</string>
 </resources>
