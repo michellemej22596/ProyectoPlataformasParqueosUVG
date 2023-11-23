@@ -5,8 +5,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.material3.MaterialTheme
@@ -24,31 +22,27 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Divider
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.AccountCircle
-import androidx.compose.material.icons.filled.ShoppingCart
-import androidx.compose.material.icons.sharp.Face
-import androidx.compose.material3.Card
-import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.material3.Button
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 
 class Perfil : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Proy1Theme(){
+            Proy1Theme {
                 Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = Color.White
+                    modifier = Modifier,
+                    color = MaterialTheme.colorScheme.background,
                 ) {
-                    ProfileFun()
+                    val navController = rememberNavController()
+                    ProfileFun(navController = navController)
                 }
             }
         }
@@ -56,106 +50,120 @@ class Perfil : ComponentActivity() {
 }
 
 @Composable
-fun ProfileFun(modifier: Modifier = Modifier) {
+fun ProfileFun(modifier: Modifier = Modifier, navController: NavHostController) {
     Surface(color = Color.White) {
         Column(
             modifier = modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-            // Green box on top
-            Box(
-                contentAlignment = Alignment.Center,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(240.dp)
-                    .background(Color.Green)
-            ) {
+
+            // Top Icon and Text
+            Column(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ){
+
                 Image(
-                    imageVector = Icons.Filled.AccountCircle,
-                    contentDescription = "Profile Picture",
-                    modifier = Modifier.size(120.dp)
+                    painter = painterResource(id = R.drawable.ic_profile),
+                    contentDescription = stringResource(R.string.profile),
+                    modifier = modifier.size(250.dp)
                 )
+
+                Text(
+                    text = stringResource(R.string.user_name),
+                    fontWeight = FontWeight.ExtraBold,
+                    fontSize = 20.sp,
+                    modifier = Modifier
+                )
+
+                Text(text = "" )
+
+                Divider(color = Color.LightGray, modifier = Modifier.padding(vertical = 16.dp))
             }
 
-
-
-            Spacer(modifier = Modifier.height(16.dp))
-            Text(
-                text = "John Doe",
-                fontWeight = FontWeight.Bold,
-                fontSize = 20.sp,
-                modifier = Modifier.padding(top = 16.dp)
+            // Sections of the screen, calling ProfileItem method
+            ProfileItem(
+                iconResId = R.drawable.person_foreground,
+                textResId = R.string.edit_profile
             )
-            Spacer(modifier = Modifier.height(16.dp))
 
-            // Profile information
-            Column(
+            Divider(color = Color.LightGray, modifier = Modifier.padding(vertical = 16.dp))
+
+            ProfileItem(
+                iconResId = R.drawable.lock_foreground,
+                textResId = R.string.my_password
+            )
+
+            Divider(color = Color.LightGray, modifier = Modifier.padding(vertical = 16.dp))
+
+            ProfileItem(
+                iconResId = R.drawable.notifications_foreground,
+                textResId = R.string.notifications
+            )
+
+            Divider(color = Color.LightGray, modifier = Modifier.padding(vertical = 16.dp))
+
+            ProfileItem(
+                iconResId = R.mipmap.commonqr_foreground,
+                textResId = R.string.my_favorites
+            )
+
+            Divider(color = Color.LightGray, modifier = Modifier.padding(vertical = 16.dp))
+
+            Button(
+                onClick = {
+                    navController.popBackStack()
+                },
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(horizontal = 16.dp),
-                horizontalAlignment = Alignment.CenterHorizontally
+                    .padding(16.dp),
             ) {
-                Spacer(modifier = Modifier.height(16.dp))
-
-                ProfileCard(
-                    icon = Icons.Sharp.Face,
-                    title = "Personal Information",
-                    items = listOf(
-                        "Carrera: Ciencias de la Computación",
-                        "Username: johndoe123",
-                        "Carnet: 22596"
-                    )
-                )
-
-                Spacer(modifier = Modifier.height(16.dp))
-
-                ProfileCard(
-                    icon = Icons.Filled.ShoppingCart,
-                    title = "Vehicle Information",
-                    items = listOf(
-                        "Model: Sedan",
-                        "Plate: ABC123"
-                    )
-                )
-
-                Spacer(modifier = Modifier.height(16.dp))
+                Text(text = "Regresar a la pantalla principal")
             }
         }
     }
 }
 
 @Composable
-fun ProfileCard(
-    icon: ImageVector,
-    title: String,
-    items: List<String>
-) {
-    Card(
-        modifier = Modifier.fillMaxWidth(),
-        shape = RoundedCornerShape(8.dp)
+fun ProfileItem(iconResId: Int, textResId: Int, modifier: Modifier = Modifier) {
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Column(
-            modifier = Modifier.padding(16.dp)
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier
+                .padding(8.dp)
+                .fillMaxWidth()
         ) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Image(
-                    imageVector = icon,
-                    contentDescription = "Icon",
-                    modifier = Modifier.size(20.dp)
-                )
 
-                Spacer(modifier = Modifier.width(8.dp))
+            Image(
+                painter = painterResource(id = iconResId),
+                contentDescription = stringResource(textResId),
+                modifier = modifier.size(60.dp).wrapContentSize(Alignment.Center)
+            )
 
-                Column {
-                    Text(text = title, fontWeight = FontWeight.Bold)
-
-                    items.forEach { item ->
-                        Spacer(modifier = Modifier.height(4.dp))
-                        Text(text = item)
-                    }
-                }
+            Column {
+                Spacer(modifier = Modifier.width(10.dp))
+                Text(text = stringResource(textResId), fontWeight = FontWeight.Bold)
             }
+
+            Spacer(modifier = Modifier.width(120.dp))
+
+            Image(
+                painter = painterResource(id = R.drawable.arrow_foreground),
+                contentDescription = stringResource(textResId),
+                modifier = modifier.size(40.dp).wrapContentSize(Alignment.Center)
+            )
         }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun ProfilePreview() {
+    Proy1Theme {
+        val navController = null
+        navController?.let { ProfileFun(navController = it) }
     }
 }
 
