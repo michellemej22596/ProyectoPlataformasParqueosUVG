@@ -15,14 +15,14 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
-import silvia.illescas.proy1.ui.theme.Proy1Theme
+import com.example.proyectov50.R
 
 
 class Exito: ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Proy1Theme() {
+            ProyectoV50Theme() {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier,
@@ -48,7 +48,7 @@ fun ExitoScreen() {
                     verticalArrangement = Arrangement.spacedBy(16.dp),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    val painter = painterResource(id = R.drawable.cheque_foreground)
+                    val painter = painterResource(id = R.mipmap.cheque_round)
                     Image(
                         painter = painter,
                         contentDescription = null,

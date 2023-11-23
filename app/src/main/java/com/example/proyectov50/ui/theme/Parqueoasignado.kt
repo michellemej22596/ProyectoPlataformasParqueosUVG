@@ -21,7 +21,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import silvia.illescas.proy1.ui.theme.Proy1Theme
+import com.example.proyectov50.R
 import kotlin.random.Random
 
 class ParqueoAsignado : ComponentActivity() {
@@ -30,7 +30,7 @@ class ParqueoAsignado : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Proy1Theme() {
+            ProyectoV50Theme() {
                 Scaffold(
                     bottomBar = {
                         BottomAppBar(

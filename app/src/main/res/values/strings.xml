@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">ProyectoV5.0</string>
+        <string name="app_name">ProyectoV5.0</string>
+        <string name="error_title">Error</string>
+        <string name="error_message">Se produjo un error al escanear el código QR, por favor inténtelo de nuevo.</string>
+        <string name="close_button">Cerrar</string>
+        <string name="welcome_text">Bienvenido</string>
+        <string name="parking_text_template">Tu parqueo es: %s</string>
+        <string name="exit_button_text">Marcar Salida</string>
+        <string name="success_title">Éxito</string>
+        <string name="success_message">Su parqueo se asignó con éxito</string>
+        <string name="success_close_button">Cerrar</string>
+        <string name="success_text">Listo</string>
+        <string name="home">Inicio</string>
+        <string name="place">Lugar</string>
+        <string name="profile">Perfil</string>
+        <string name="help">Ayuda</string>
+        <string name="user_name">Michelle Mejia</string>
+        <string name="edit_profile">Editar Perfil</string>
+        <string name="my_password">Mi Contraseña</string>
+        <string name="notifications">Notificaciones</string>
+        <string name="my_favorites">Mis Favoritos</string>
 </resources>

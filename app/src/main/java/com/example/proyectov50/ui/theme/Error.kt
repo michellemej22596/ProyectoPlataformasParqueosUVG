@@ -27,14 +27,16 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import silvia.illescas.proy1.ui.theme.Proy1Theme
+import com.example.proyectov50.R
+
 
 
 class Error: ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Proy1Theme() {
+            ProyectoV50Theme() {
+
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier,
@@ -60,7 +62,7 @@ fun ErrorScreen() {
                     verticalArrangement = Arrangement.spacedBy(16.dp),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    val painter = painterResource(id = R.mipmap.exclamacion1_foreground)
+                    val painter = painterResource(id = R.mipmap.exclamacion1_round)
                     Image(
                         painter = painter,
                         contentDescription = null,
