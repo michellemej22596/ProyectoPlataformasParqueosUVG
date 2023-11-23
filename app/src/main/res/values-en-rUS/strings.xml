@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
-    <string name="app_name">ProyectoV5.0</string>
-=======
     <string name="app_name">proy1</string>
->>>>>>> 380b0938bffd4465744bce98e678a7cf2c1ffe27
     <string name="error_title">Error</string>
     <string name="error_message">An error occurred while scanning the QR code, please try again.</string>
     <string name="close_button">Close</string>
