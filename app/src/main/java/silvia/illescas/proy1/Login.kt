@@ -86,10 +86,6 @@ fun LoginScreen(navController: NavHostController) {
         Spacer(modifier = Modifier.height(16.dp))
         Text(
             text = "Si no tienes sesión, regístrate",
-            modifier = Modifier.clickable { /* Acción al hacer clic */ }
-        )
-        Text(
-            text = "Si no tienes sesión, regístrate",
             modifier = Modifier.clickable {
                 navController.navigate("registrationScreen")
             }
