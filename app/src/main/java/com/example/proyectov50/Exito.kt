@@ -1,4 +1,4 @@
-package silvia.illescas.proy1
+package com.example.proyectov50
 
 
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.example.proyectov50.ui.theme
+package com.example.proyectov50
 
 import android.annotation.SuppressLint
 import android.content.ActivityNotFoundException
